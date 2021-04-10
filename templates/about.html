@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 120%;
+        width: 100%;
+        background-image: url("{{ url_for('static', filename = 'white_rain.jpg') }}");
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size : cover;
+        opacity: 0.4;
+        }
+    </style>    
+    <title>About</title>
+</head>
+<body>
+    <!-- <h1>About Drops</h1>
+    <p>Drops is a rain prediction web API which helps you in predicting whether or not it will rain tomorrow. The whole project is built on a machine learning model that takes account of several factors in order to predict rainfall. The Data that has been used is of Australia which tells us a lot about the climatic conditions over there based on different regions and topologies. Since global warming, the patterns in rainfall across the globe have changed drastically hence relying on one model won't suffice in the long run. Creating future scope for this project where with the help of live data streaming the model will keep evolving and give even better results.</p>
+</body> -->
+    <div class="img"></div>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-20 mx-auto flex flex-col">
+            <div class="lg:w-4/6 mx-auto">
+                <div class="rounded-xl h-60 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="{{ url_for('static', filename = 'about_img.jpg') }}">
+                </div>
+                <div class="flex flex-col sm:flex-row mt-10">
+                <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                    <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" class="w-20 h-20 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 30 40">
+                            <path d="M15 3
+                            Q16.5 6.8 25 18
+                            A12.8 12.8 0 1 1 5 18
+                            Q13.5 6.8 15 3z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col items-center text-center justify-center">
+                    <h2 class="font-size text-3xl title-font mt-4 text-gray-900 text-lg">About Drops</h2>
+                    <!-- <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div> -->
+                    
+                    </div>
+                </div>
+                <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                    <p class="leading-relaxed text-lg mb-4">Drops is a rain prediction web API which helps you in predicting whether or not it will rain tomorrow. The whole project is built on a machine learning model that takes account of several factors in order to predict rainfall. The Data that has been used is of Australia which tells us a lot about the climatic conditions over there based on different regions and topologies. Since global warming, the patterns in rainfall across the globe have changed drastically hence relying on one model won't suffice in the long run. Creating future scope for this project where with the help of live data streaming the model will keep evolving and give even better results.</p>
+                    <!-- <a class="text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                    </a> -->
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+       
+</body>  
+</html>

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+      padding: 5px;
+      font-size: 20px;
+      width: 30px;
+      height: 26px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      
+
+    }
+    .fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin: 5px 5px
+    
+    
+    }
+
+    .fa-linkedin{
+      background: #0e76a8 ;
+      color: white;
+      margin: 5px 5px
+
+    }
+    .fa-instagram{
+      background: #cd486b ;
+      color: white;
+      margin: 5px 5px;
+    }
+    h1.font-medium.title-font.mt-4.text-gray-900.text-4xl {
+    text-align: center;
+        }
+    .photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-image: url("{{ url_for('static', filename = 'white_rain.jpg') }}");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size : cover;
+    opacity: 0.4;
+    }    
+    </style>
+
+    
+
+</head> 
+
+
+<body>
+    
+<div class="photo"></div>
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-15 mx-auto flex flex-col">
+      <div class="lg:w-3/6 mx-auto">
+        <div class="dev">
+            <h1 class="font-medium title-font mt-4 text-gray-900 text-4xl ">Developer</h1>
+        </div>
+        <!-- <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500">
+        </div> -->
+        <div class="flex flex-col sm:flex-row mt-10">
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+            <div class="w-50 h-50 rounded-full inline-flex items-center justify-content-around ">
+                <div class="rounded-full  overflow-hidden ">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="{{ url_for('static', filename = 'me2.jpeg') }}">
+                  </div>
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg> -->
+            </div>
+            <div class="flex flex-col items-center text-center justify-center">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">AYUSH SINGH</h2>
+              <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+              <p class="text-base"> ayushsingh749036@gmail.com </p>
+            </div>
+          </div>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+            <p class="leading-relaxed text-lg mb-4">Hi, I am Ayush , Currently pursuing BSc. in Data Science from Symbiosis Skills And Professional University . I really enjoy working with data and love all the possibilties it creates. In the past I have worked with some other python, machine learning and deep learning projects but this is my first end to end project . Apart from data science I love playing volleyball . I'm also a rhythm guitarist in my college band. I have mentioned my social handles below feel free to connect with me anytime .</p>
+            
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+                </a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 30 40">
+          <path d="M15 3
+          Q16.5 6.8 25 18
+          A12.8 12.8 0 1 1 5 18
+          Q13.5 6.8 15 3z"></path>
+        </svg>
+        <span class="ml-3 text-xl">Drops</span>
+      </a>
+      <p class="text-sm text-gray-900 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-500 sm:py-2 sm:mt-0 mt-4">© 2021 Ayush Singh —
+        <a href="https://www.linkedin.com/in/ayush-singh-357336196/" class="text-gray-900 ml-1" rel="noopener noreferrer" target="_blank">ayush-singh</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+
+
+        
+        <a href="https://www.facebook.com/profile.php?id=100006897138565" class="fa fa-facebook"></a>
+        <!-- <a href="" class="fa fa-twitter"></a> -->
+        <a href="https://www.linkedin.com/in/ayush-singh-357336196/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/_ayushh.singhh_/" class="fa fa-instagram"></a>
+        
+        
+      </span>
+    </div>
+  </footer>
+</body>
